@@ -5,7 +5,7 @@ module.exports = function (app) {
       .findQuestionsForQuiz(req.params["qid"])
       .then((questions) => res.json(questions))
   );
-  app.get("/api.questions", (req, res) =>
+  app.get("/api/questions", (req, res) =>
     questionService
       .findAllQuestions()
       .then((allQuestions) => res.json(allQuestions))
