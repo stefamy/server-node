@@ -2,10 +2,13 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/whiteboard", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb://heroku_1zvwwvfp:k96ca8q1uk0oio389ju9s43ho1@ds127938.mlab.com:27938/heroku_1zvwwvfp",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 const bodyParser = require("body-parser");
 
