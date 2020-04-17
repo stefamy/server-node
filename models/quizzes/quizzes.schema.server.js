@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const quizzesSchema = mongoose.Schema(
   {
-    title: String,
+    title: {
+      type: String,
+    },
     questions: [
       {
         type: mongoose.Schema.Types.ObjectId,
